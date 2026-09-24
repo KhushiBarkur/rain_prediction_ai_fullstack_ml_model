@@ -1,81 +1,24 @@
-# 🌧️ Machine Learning Based Rain Prediction App
+🌧️ RainPredict AI: End-to-End Machine Learning Web App
+RainPredict AI is a full-stack web application that predicts the probability of rain based on local weather parameters. The project integrates a custom-trained Logistic Regression model with a modern React frontend and a high-performance FastAPI backend.
 
-A full-stack machine learning application that predicts rainfall using a Logistic Regression model. The project demonstrates the complete ML workflow — from data preprocessing and feature engineering to model development, API integration, frontend development, containerization, and deployment.
+🚀 Key Features
+Real-time Prediction: Instant probability calculation using a vector-optimized NumPy engine.
 
-## 🚀 Project Overview
+Glassmorphism UI: A premium, modern interface featuring frosted glass effects and responsive design.
 
-The **Machine Learning Based Rain Prediction App** predicts whether rainfall is expected based on historical weather parameters.
+Dynamic Risk Assessment: Categorical results ranging from "Very Low" to "Very High" risk based on sigmoid probability scores.
 
-The Logistic Regression algorithm was **implemented from scratch using mathematical concepts**, providing a deeper understanding of how binary classification models work internally. The initial model achieved an accuracy of **86.1%**, which was improved to **88.7%** through feature engineering and **Recursive Feature Elimination (RFE)**.
+Robust Error Handling: Clean state management to handle connection timeouts and input validation.
 
-The trained model was integrated into a full-stack web application using **React** for the frontend and **FastAPI** for the backend, enabling users to submit weather parameters and receive real-time predictions.
+🛠️ Technical Stack
+Frontend: React.js, Axios, Vite, CSS3 (Glassmorphism & Animations).
 
----
+Backend: Python, FastAPI, Uvicorn.
 
-## ✨ Key Features
+Machine Learning: Scikit-Learn (StandardScaler), Joblib, NumPy (Vectorized Dot Product).
 
-- 🌧️ Rainfall prediction using Machine Learning
-- 🧠 Logistic Regression implemented from scratch
-- 📊 Data preprocessing and feature engineering
-- 🎯 Recursive Feature Elimination (RFE)
-- 📈 Model accuracy improvement from **86.1% → 88.7%**
-- ⚡ Real-time prediction through REST API
-- 🔗 FastAPI backend for ML model serving
-- ⚛️ React-based frontend
-- 🐳 Dockerized application
-- 🚀 Production-oriented project structure
+📐 Machine Learning LogicThe core engine utilizes a Sigmoid activation function to transform linear input into a probability range SIGMOID(z) = 1/(1+e^-z)
 
----
+The backend performs real-time feature scaling and injects a bias term (intercept) before calculating the dot product of the feature vector and model weights.
 
-## 🛠️ Tech Stack
 
-### Machine Learning
-- Python
-- NumPy
-- Pandas
-- Scikit-learn
-- Logistic Regression
-- Recursive Feature Elimination (RFE)
-
-### Backend
-- FastAPI
-- REST API
-- Python
-
-### Frontend
-- React
-- JavaScript
-- HTML
-- CSS
-
-### Deployment & Tools
-- Docker
-- Git
-- GitHub
-
----
-
-## 🧠 Machine Learning Workflow
-
-```text
-Weather Dataset
-      ↓
-Data Cleaning & Preprocessing
-      ↓
-Exploratory Data Analysis
-      ↓
-Feature Engineering
-      ↓
-Recursive Feature Elimination (RFE)
-      ↓
-Feature Selection
-      ↓
-Logistic Regression
-      ↓
-Model Evaluation
-      ↓
-FastAPI Backend
-      ↓
-React Frontend
-      ↓
-Real-Time Rain Prediction
